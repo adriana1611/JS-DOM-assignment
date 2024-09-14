@@ -4,12 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel ="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <title> JS & DOM Assignment</title>
   </head>
   <body>
-  
+
+   <div class ='container'>
+  <br>
+ <!--CONTAINER FOR YOUR FORM -->
+  <div class="card">
+    <div class="card-body" id ="card-body">
+        <div class="row" >
+            <div class="col-sm">
+              <!--FORM ELEMENTS  -->
+                <div class="form-group">
+                    <label for="new-movie">What Movie You Would like to See?</label> <!-- THE LABEL FOR THE INPUT FIELD-->
+                    <input type="text" class="form-control" id="new-movie">    <!-- INPUT FIELD FOR THE MOVIE -->
+
+                </div>
+                
+                <div class="col-sm">
+                  
+                    <div class="form-group">
+                        <label for="tickets">How Many Tickets?</label>  <!-- THE LABEL FOR THE INPUT FIELD-->
+                        <input type="text" class="form-control" id="tickets">    <!-- INPUT FIELD FOR NUMBER OF TICKETS-->
+            
+        </div>
+        <br>
+        <!-- SUBMIT BUTTON -->
+        <button id="button" class="btn btn-secondary ">Submit !</button>
+    </div>
+  </div>
+</div>
+<!-- TABLE -->
+ <br> 
+<table id="table" class ="table table-striped">
+<tr>
+    <th> Movie </th>
+    <th> Number of tickets </th>
+</tr>
+</table>
+ 
 
 
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
